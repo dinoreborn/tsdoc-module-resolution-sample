@@ -1,0 +1,19 @@
+{
+  "name": "typedoc-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "typedoc --options typedoc.json --out td_out .\\tsdoctest\\node_modules\\ --ignoreCompilerErrors --module commonjs --moduleResolution node --includeDeclarations --excludeExternals --excludePrivate --excludeProtected --traceResolution"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typedoc": "^0.13.0"
+  },
+  "dependencies": {
+    "typedoc-plugin-remove-internal-members": "file:typedoc-plugin-remove-internal-members/npm-image",
+    "typedoc-plugin-remove-non-doc": "file:typedoc-plugin-remove-non-doc/typedoc-plugin-remove-non-doc/npm-image"
+  }
+}
